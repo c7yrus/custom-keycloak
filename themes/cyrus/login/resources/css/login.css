@@ -1,11 +1,99 @@
+/*Set up the background image and dimensions*/
 .login-pf body {
+    background-size: cover;
     height: 100%;
 }
 
+/*styling the header bit*/
+#kc-header {
+    width:100%;
+    background-color: #d24545;
+    padding: 3em;
+}
+
+div#kc-header::after {
+    content: 'Welcome to Genny';
+    color:#fff;
+    font-size: 40px;
+    line-height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kc-header-wrapper {
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2em;
+    white-space: normal;
+}
+
+body {
+    background-color: #fff;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+div#kc-form label {
+    text-decoration: none;
+    color: #000 !important;
+    font-size: 20px;
+    font-weight: 'normal';
+    letter-spacing: .15em;
+}
+
+input[type=text], input[type=password] {
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 20px;
+    background: none;
+    padding: 12px;
+    width: 95%;
+    margin-top: 1em;
+}
+
+/*button*/
+input[type=submit] {
+  padding: 10px;
+  text-decoration: uppercase;
+  letter-spacing: .15em;
+  border-radius: 3px;
+  border: none;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+    width: 100%;
+    border: 1px #d8d8d8 solid;
+
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.header-spacer {
+    padding: 20px;
+}
+
+.header-wrapper img {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+/*text on failed login*/
 .alert-error {
-    background-color: #ffffff;
-    border-color: #cc0000;
-    color: #333333;
+    color: #d24545;
+    margin-bottom: 1em;
 }
 
 #kc-locale ul {
@@ -73,69 +161,6 @@ a#kc-current-locale-link::after {
 
 div.kc-logo-text span {
     display: none;
-}
-
-div#kc-header::after {
-    content: 'Welcome to Genny';
-    color:#fff;
-    font-size: 40px;
-    line-height: 30px;
-}
-
-#kc-header {
-    width:100%;
-    background-color: #55c669;
-    padding-right: 2em;
-    padding-left: 3em;
-    padding-bottom: 5em;
-}
-
-body {
-    background-color: #55c669;
-    background-image: url('../img/bkgrnd.jpg');
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-family: sans-serif;
-    margin: 0px;
-}
-
-div#kc-form label {
-    color: #d24545 !important;
-    font-size: 20px;
-    font-weight: 'normal';
-}
-
-input[type=text], input[type=password] {
-    color: #000;
-    font-size: 15px;
-    margin-bottom: 20px;
-    background: none;
-    padding: 12px;
-    width: 95%;
-}
-
-/*button*/
-input[type=submit] {
-    border: none;
-    border-radius: 3px;
-    background-color: rgb(40,53,147);
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
-    color: rgba(0,0,0,0.6);
-    font-size: 20px;
-    color: white;
-    text-transform: uppercase;
-    width: 98%;
-}
-
-#kc-header-wrapper {
-    font-size: 29px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 1.2em;
-    padding: 62px 10px 20px;
-    white-space: normal;
 }
 
 #kc-content {
