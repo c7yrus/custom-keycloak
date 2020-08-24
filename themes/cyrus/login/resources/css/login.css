@@ -7,7 +7,7 @@
 /*styling the header bit*/
 #kc-header {
     width:100%;
-    background-color: #d24545;
+    background-color: #1183c8;
     padding: 3em;
 }
 
@@ -27,6 +27,16 @@ div#kc-header::after {
     letter-spacing: 3px;
     line-height: 1.2em;
     white-space: normal;
+}
+
+.form-group {
+    position: relative;
+}
+
+.login-pf-settings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 body {
@@ -62,7 +72,7 @@ input[type=submit] {
   padding: 10px;
   text-decoration: uppercase;
   letter-spacing: .15em;
-  border-radius: 3px;
+  border-radius: 20px;
   border: none;
   font-size: 25px;
   display: flex;
@@ -71,7 +81,9 @@ input[type=submit] {
   text-decoration: none;
     width: 100%;
     border: 1px #d8d8d8 solid;
-
+    background-color: #1183c8;
+    color: #fff;
+    margin: auto;
 }
 
 .header-wrapper {
@@ -192,16 +204,18 @@ div.kc-logo-text span {
 }
 
 #kc-info-wrapper {
-    font-size: 13px;
+    font-size: 15px;
+
 }
 
-#kc-form-options span {
+#kc-form-options div {
     display: block;
 }
 
 #kc-form-options .checkbox {
     margin-top: 0;
     color: #72767b;
+    margin-bottom: 1em;
 }
 
 #kc-terms-text {
@@ -209,7 +223,7 @@ div.kc-logo-text span {
 }
 
 #kc-registration {
-    margin-bottom: 15px;
+    margin-top: 1em;
 }
 
 /* TOTP */
@@ -473,7 +487,7 @@ a.zocial  {
 }
 
 #kc-form-buttons {
-  margin-top: 40px;
+  margin-top: 1em;
 }
 
 .login-pf-page .login-pf-brand {
