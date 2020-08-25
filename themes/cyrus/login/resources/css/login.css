@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-/*styling the header bit*/
+/*styling the header bit
 #kc-header {
     width:100%;
     background-color: #1183c8;
@@ -19,6 +19,12 @@ div#kc-header::after {
     display:flex;
     justify-content: center;
     align-items: center;
+}*/
+
+#kc-page-title {
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 24px;
 }
 
 #kc-header-wrapper {
@@ -31,6 +37,7 @@ div#kc-header::after {
 
 .form-group {
     position: relative;
+    margin-top: 10px;
 }
 
 .login-pf-settings {
@@ -46,15 +53,14 @@ body {
     background-repeat: no-repeat;
     color: #fff;
     font-family: sans-serif;
-    margin: 0px;
 }
 
 div#kc-form label {
     text-decoration: none;
     color: #000 !important;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 'normal';
-    letter-spacing: .15em;
+    letter-spacing: .10em;
 }
 
 input[type=text], input[type=password] {
@@ -64,7 +70,7 @@ input[type=text], input[type=password] {
     background: none;
     padding: 12px;
     width: 95%;
-    margin-top: 1em;
+    margin-top: 8px;
 }
 
 /*button*/
@@ -367,9 +373,6 @@ a.zocial  {
     padding: 7px 10px;
     font-size: 14px;
 }
-.zocial:hover {
-    background: #ededed !important;
-}
 
 .zocial.facebook,
 .zocial.github,
@@ -498,11 +501,11 @@ a.zocial  {
 
 .card-pf {
   background: #fff;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 100px auto;
   max-width: 500px;
   border-top: 0;
-  box-shadow: 0 0 0;
+  padding: 2em;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 /*tablet*/
@@ -538,22 +541,30 @@ a.zocial  {
 @media (min-width: 768px) {
   .login-pf-page .login-pf-social-section:first-of-type {
     padding-right: 39px;
-    border-right: 1px solid #d1d1d1;
     margin-right: -1px;
   }
-  .login-pf-page .login-pf-social-section:last-of-type {
-    padding-left: 40px;
-  }
+
   .login-pf-page .login-pf-social-section .login-pf-social-link:last-of-type {
     margin-bottom: 0;
   }
 }
 
 .login-pf-page .login-pf-social-link {
-  margin-bottom: 25px;
+  padding: 10px;
+  letter-spacing: .10em;
+  border-radius: 10px;
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+    width: 20vw;
+    background-color: #2e4f8f;
+    margin: auto;
 }
 .login-pf-page .login-pf-social-link a {
-  padding: 2px 0;
+    background-color: inherit;
+    color: #fff;
+    text-decoration: none;
 }
 
 .login-pf-page.login-pf-page-accounts {
@@ -565,9 +576,6 @@ a.zocial  {
     margin-top: 0;
 }
 
-.login-pf-page .list-view-pf .list-group-item {
-    border-bottom: 1px solid #ededed;
-}
 
 .login-pf-page .list-view-pf-description {
     width: 100%;
