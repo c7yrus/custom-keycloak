@@ -1,7 +1,7 @@
 /*Set up the background image and dimensions*/
 .login-pf body {
-    background-size: cover;
     height: 100%;
+    background-color: #f0f2f5;
 }
 
 /*styling the header bit
@@ -67,10 +67,10 @@ input[type=text], input[type=password] {
     color: #000;
     font-size: 15px;
     margin-bottom: 20px;
-    background: none;
     padding: 12px;
     width: 95%;
     margin-top: 8px;
+    border-radius: 5px;
 }
 
 /*button*/
@@ -78,7 +78,7 @@ input[type=submit] {
   padding: 10px;
   text-decoration: uppercase;
   letter-spacing: .15em;
-  border-radius: 20px;
+    border-radius: 5px;
   border: none;
   font-size: 25px;
   display: flex;
@@ -114,6 +114,14 @@ input[type=submit] {
     margin-bottom: 1em;
 }
 
+#forgotPassword{
+    text-decoration: none;
+}
+
+#Register{
+    text-decoration: none;
+}
+
 #kc-locale ul {
     display: none;
     position: absolute;
@@ -141,7 +149,7 @@ input[type=submit] {
 
 #kc-locale ul li a:hover {
     color: #4d5258;
-    background-color: #d4edfa;
+    background-color: #fff;
 }
 
 #kc-locale-dropdown a {
@@ -203,11 +211,6 @@ div.kc-logo-text span {
 /* #kc-content-wrapper {
     overflow-y: hidden;
 } */
-
-#kc-info {
-    padding-bottom: 200px;
-    margin-bottom: -200px;
-}
 
 #kc-info-wrapper {
     font-size: 15px;
@@ -302,14 +305,22 @@ ul#kc-totp-supported-apps {
 
 #kc-social-providers ul {
     padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #kc-social-providers li {
     display: block;
 }
 
+/*only applies to the first element
 #kc-social-providers li:first-of-type {
-    margin-top: 0;
+    display: inline-block;
+}*/
+
+#kc-social-providers li {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 .kc-login-tooltip{
@@ -505,7 +516,9 @@ a.zocial  {
   max-width: 500px;
   border-top: 0;
   padding: 2em;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+    box-shadow:
+  0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
 }
 
 /*tablet*/
@@ -552,12 +565,11 @@ a.zocial  {
 .login-pf-page .login-pf-social-link {
   padding: 10px;
   letter-spacing: .10em;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 25px;
   display: flex;
   text-align: center;
   cursor: pointer;
-    width: 20vw;
     background-color: #2e4f8f;
     margin: auto;
 }
