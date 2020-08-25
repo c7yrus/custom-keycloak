@@ -21,9 +21,13 @@ div#kc-header::after {
     align-items: center;
 }*/
 
+#header-label{
+    justify-content: center;
+}
+
 #kc-page-title {
     color: #000;
-    font-size: 15px;
+    font-size: 35px;
     margin-bottom: 24px;
 }
 
@@ -78,7 +82,7 @@ input[type=submit] {
   padding: 10px;
   text-decoration: uppercase;
   letter-spacing: .15em;
-    border-radius: 5px;
+    border-radius: 25px;
   border: none;
   font-size: 25px;
   display: flex;
@@ -87,7 +91,7 @@ input[type=submit] {
   text-decoration: none;
     width: 100%;
     border: 1px #d8d8d8 solid;
-    background-color: #1183c8;
+    background-color:#0095ff;
     color: #fff;
     margin: auto;
 }
@@ -305,7 +309,7 @@ ul#kc-totp-supported-apps {
 
 #kc-social-providers ul {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
