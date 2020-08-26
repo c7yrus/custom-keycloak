@@ -7,7 +7,7 @@
 #kc-header {
     width:100%;
     padding: 2em;
-    background-color: #fff9f9;
+    background-color: #f7f7f7;
     border-bottom: 1px solid black;
 }
 
@@ -15,7 +15,7 @@ div#kc-header::after {
     content: 'Genny';
     color:#000;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 10px;
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -131,6 +131,10 @@ input[type=submit]:hover {
 .header-wrapper img {
     max-height: 150px;
     max-width: 150px;
+}
+
+#kc-social-providers{
+    margin-top: 40px;
 }
 
 #socialLoginContainer{
@@ -649,6 +653,7 @@ a.zocial  {
 
   .login-pf-page .login-pf-social-section .login-pf-social-link:last-of-type {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
