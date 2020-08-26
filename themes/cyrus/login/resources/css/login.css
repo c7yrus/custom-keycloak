@@ -1,25 +1,25 @@
 /*Set up the background image and dimensions*/
 .login-pf body {
     height: 100%;
-    background-color: #f0f2f5;
+    background-color: #fff;
 }
 
-/*styling the header bit
 #kc-header {
     width:100%;
-    background-color: #1183c8;
-    padding: 3em;
+    padding: 2em;
+    background-color: #fff9f9;
+    border-bottom: 1px solid black;
 }
 
 div#kc-header::after {
-    content: 'Welcome to Genny';
-    color:#fff;
+    content: 'Genny';
+    color:#000;
     font-size: 40px;
     line-height: 30px;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}*/
+}
 
 #header-label{
     justify-content: center;
@@ -28,6 +28,7 @@ div#kc-header::after {
 #heading{
     color:  #000;
     font-size: 40px;
+    font-weight: lighter;
 }
 
 #headingContainer{
@@ -37,7 +38,7 @@ div#kc-header::after {
 
 #kc-page-title {
     color: #000;
-    font-size: 30px;
+    height:0;
     justify-content: center;
     text-align: center;
 }
@@ -89,7 +90,7 @@ input[type=text], input[type=password] {
 }
 
 input[type=text]:focus, input[type=password]:focus {
-    outline-color: #0fa2e2
+    outline-color: #1167b1
 }
 
 /*button*/
@@ -173,7 +174,7 @@ input[type=submit]:hover {
 
 #forgotPassword{
     text-decoration: none;
-    color: #1167b1;
+    color: #0fa2e2;
 }
 
 #forgotPassword:hover {
@@ -216,7 +217,7 @@ input[type=submit]:hover {
     padding-right: 1em;
     line-height: 1.5em;
     color: #000;
-    background-color: #f0f2f5;
+    background-color: #fff;
   }
 
 #kc-locale ul {
@@ -327,7 +328,8 @@ div.kc-logo-text span {
 #kc-registration {
     text-align: center;
     font-size: 20px;
-    color: #000
+    color: #000;
+    margin-top: 30px;
 }
 
 /* TOTP */
@@ -606,11 +608,9 @@ a.zocial  {
 }
 
 .card-pf {
-  margin: 100px auto;
-  max-width: 500px;
+  margin: auto;
+  max-width: 460px;
   border-top: 0;
-  padding: 2em;
-  border-radius: 8px;
 }
 
 /*tablet*/
@@ -645,8 +645,6 @@ a.zocial  {
 
 @media (min-width: 768px) {
   .login-pf-page .login-pf-social-section:first-of-type {
-    padding-right: 39px;
-    margin-right: -1px;
   }
 
   .login-pf-page .login-pf-social-section .login-pf-social-link:last-of-type {

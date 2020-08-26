@@ -55,9 +55,6 @@
     </div>
         <#if realm.password && social.providers??>
         <hr class="hr-text" data-content="Or Sign in with">
-        <div class="${properties.kcFormGroupClass!}">
-            <label for="social-providers" class="${properties.kcLabelClass!}">${msg("Or sign in with")}</label>
-        </div>
         <div id="kc-social-providers" class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
             <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 4>${properties.kcFormSocialAccountDoubleListClass!}</#if>">
                 <#list social.providers as p>
