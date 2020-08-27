@@ -1,13 +1,17 @@
 <#import "template.ftl" as layout>
 <@layout.mainLayout active='account' bodyClass='user'; section>
 
-    <div class="row">
-        <div class="col-md-10">
-            <h2>${msg("editAccountHtmlTitle")}</h2>
+    <div class="header-container">
+        <div class="row">
+        <div class="header-title">
+            <h1>${msg("editAccountHtmlTitle")}</h1>
         </div>
     </div>
-
-            <hr id="hr-line">
+    <div class="subtitle">
+        <span class=""><span class="required">*</span> ${msg("All fields required")}</span>
+    </div>
+    <hr id="hr-line">
+    </div>
 
     <div class="form-container">
 
