@@ -4,22 +4,6 @@
     background-color: #fff;
 }
 
-#kc-header {
-    width:100%;
-    padding: 2em;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid black;
-}
-
-div#kc-header::after {
-    content: 'Genny';
-    color:#000;
-    font-size: 40px;
-    line-height: 10px;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 #header-label{
     justify-content: center;
@@ -80,13 +64,13 @@ div#kc-form label {
 }
 
 input[type=text], input[type=password] {
-    color: #000;
     font-size: 15px;
-    margin-bottom: 10px;
     padding: 12px;
     width: 95%;
-    margin-top: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
+    border-color: #91c9fa
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -134,7 +118,6 @@ input[type=submit]:hover {
 }
 
 #kc-social-providers{
-    margin-top: 40px;
 }
 
 #socialLoginContainer{
@@ -329,11 +312,16 @@ div.kc-logo-text span {
     margin-bottom: 20px;
 }
 
+#continue-with{
+    text-align: center;
+    color: #000
+}
+
 #kc-registration {
     text-align: center;
-    font-size: 20px;
-    color: #000;
-    margin-top: 30px;
+    font-size: 15px;
+    color: darkgrey;
+    margin-top: 10px;
 }
 
 /* TOTP */
@@ -406,13 +394,9 @@ ul#kc-totp-supported-apps {
 
 #kc-social-providers ul {
     padding: 0;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 2em;
 }
 
-#kc-social-providers li {
-    display: block;
-}
 
 /*only applies to the first element
 #kc-social-providers li:first-of-type {
@@ -557,7 +541,6 @@ a.zocial  {
 
     #kc-social-providers li {
         display: block;
-        margin-right: 5px;
     }
 
     .login-pf .container {
@@ -606,7 +589,6 @@ a.zocial  {
 }
 
 .login-pf-page .login-pf-brand {
-  margin-top: 20px;
   max-width: 360px;
   width: 40%;
 }
@@ -656,6 +638,11 @@ a.zocial  {
     margin-bottom: 10px;
   }
 
+}
+
+.login-pf-social-all{
+    text-align: center;
+    margin: 2em;
 }
 
 .login-pf-page.login-pf-page-accounts {
