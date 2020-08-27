@@ -41,7 +41,7 @@
             <div class="row-buttons">
                 <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
                 <button type="submit" name="submitAction" value="Save">${msg("doSave")}</button>
-                <button type="cancel"  name="submitAction" value="Cancel">${msg("doCancel")}</button>
+                <button type="cancel" name="submitAction" value="Cancel">${msg("doCancel")}</button>
             </div>
         </div>
     </div>

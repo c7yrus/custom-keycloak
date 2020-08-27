@@ -1,59 +1,42 @@
 <#import "template.ftl" as layout>
-<@layout.mainLayout active='password' bodyClass='password'; section>
+<@layout.mainLayout active='social' bodyClass='social'; section>
 
     <div class="header-container">
         <div class="row">
-        <div class="header-title">
-            <h2>${msg("changePasswordHtmlTitle")}</h2>
+            <div class="header-title-expanded">
+                <h1>${msg("federatedIdentitiesHtmlTitle")}</h1>
+            </div>
         </div>
-    </div>
-    <div class="subtitle">
-        <span class=""><span class="required">*</span> ${msg("All fields required")}</span>
-    </div>
     <hr id="hr-line">
     </div>
 
     <div class="form-container">
-
-    <form action="${url.passwordUrl}" class="form-horizontal" method="post">
-
-    <input type="text" id="username" name="username" value="${(account.username!'')}" autocomplete="username" readonly="readonly" style="display:none;">
-
-    <#if password.passwordSet>
-        <div class="">
-          <div class="">
-            <input type="password" class="form-control" id="password" name="password" autofocus autocomplete="current-password">
-          </div>
-      </div>
-    </#if>
-
-    <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
-
-    <div class="">
-        <div class="">
-             <input type="password" class="form-control" id="password-new" name="password-new" autocomplete="new-password">
+    <#list federatedIdentity.identities as identity>
+        <div class="form-group">
+            <label for="${identity.providerId!}" class="control-label">${identity.displayName!}</label>
+            <input type="text" disabled="true" class="form-control" value="${identity.userName!}">
+        </div>
+        <div class="form-group">
+            <#if identity.connected>
+                <#if federatedIdentity.removeLinkPossible>
+                    <form action="${url.socialUrl}" method="post" class="form-inline">
+                        <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
+                        <input type="hidden" id="action" name="action" value="remove">
+                        <input type="hidden" id="providerId" name="providerId" value="${identity.providerId!}">
+                        <button type="text" id="remove-link-${identity.providerId!}" class="btn btn-default">${msg("doRemove")}</button>
+                    </form>
+                </#if>
+            <#else>
+                <form action="${url.socialUrl}" method="post" class="form-inline">
+                    <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
+                    <input type="hidden" id="action" name="action" value="add">
+                    <input type="hidden" id="providerId" name="providerId" value="${identity.providerId!}">
+                    <button type="" id="add-link-${identity.providerId!}">${msg("doAdd")}</button>
+                </form>
+            </#if>
         </div>
     </div>
-
-    <div class="">
-        <div class="">
-            <input type="password" class="form-control" id="password-confirm" name="password-confirm" autocomplete="new-password">
-        </div>
-    </div>
-
-
-    <div class="form-group">
-        <div id="">
-            <div class="row-buttons">
-                <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
-                <button type="submit" name="submitAction" value="Save">${msg("doSave")}</button>
-                <button type="save" name="submitAction" value="Save">${msg("doSave")}</button>
-                <button type="cancel"  name="submitAction" value="Cancel">${msg("doCancel")}</button>
-            </div>
-        </div>
-    </div>
-
-    </form>
+    </#list>
     </div>
 
 </@layout.mainLayout>
