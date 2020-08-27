@@ -3,7 +3,7 @@
     <#if section = "header">
     <#elseif section = "form">
     <div id="headingContainer">
-        <p id="heading">Welcome to </p>
+        <p id="heading">Welcome to Internmatch</p>
     </div>
     <div id="kc-form" <#if realm.password && social.providers??>class="${properties.kcContentWrapperClass!}"</#if>>
       <div id="kc-form-wrapper" <#if realm.password && social.providers??>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>

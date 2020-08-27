@@ -271,7 +271,7 @@ a.zocial {
 .zocial.forrst {background-color: #1e360d;}
 .zocial.foursquare {background-color: #44a8e0;}
 .zocial.github {color: #050505; border: 1px solid #050505; font-weight: bolder;}
-.zocial.github:hover {background-color: rgba(251, 251, 251, 0.2) !important; }
+.zocial.github:hover {background-color: #dcdcdc !important; }
 .zocial.gmail {background-color: #efefef; color: #222;}
 .zocial.google {color: #4e6cf7; border: 1px solid #4e6cf7; font-weight: bolder; }
 .zocial.google:hover {background-color: rgba(78, 108, 247, 0.2) !important; }
