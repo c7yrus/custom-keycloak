@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="${properties.kcFormGroupClass!}">
-                    <input tabindex="2" id="password" placeholder="${msg("password")}" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="current-password"/>
+                    <input tabindex="2" id="password" placeholder="${msg("password ")}" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="current-password"/>
                 </div>
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">

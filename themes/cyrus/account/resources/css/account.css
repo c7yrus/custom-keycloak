@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    background-color: #f79;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -45,7 +44,6 @@ header .navbar {
 }
 
 .content-area {
-    background-color: #1183c8;
     border-color: #CECECE;
     border-style: solid;
     border-width: 0 1px;

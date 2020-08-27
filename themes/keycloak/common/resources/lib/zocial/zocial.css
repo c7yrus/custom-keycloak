@@ -7,6 +7,8 @@
 	License: http://opensource.org/licenses/mit-license.php
 */
 
+/* This is my css file */
+
 
 /* Button structure */
 
@@ -136,7 +138,7 @@ a.zocial {
 .zocial.eventbrite:before { content: "\f11b"; }
 .zocial.eventful:before { content: "\f11c"; }
 .zocial.evernote:before { content: "\f11d"; }
-.zocial.facebook:before { content: "\f11e"; }
+.zocial.facebook:before { content: "\f11e"; padding-right: 0.2em;}
 .zocial.fivehundredpx:before { content: "\f11f"; }
 .zocial.flattr:before { content: "\f120"; }
 .zocial.flickr:before { content: "\f121"; }
