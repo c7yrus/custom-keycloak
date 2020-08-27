@@ -11,14 +11,14 @@
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                 <div class="${properties.kcFormGroupClass!}">
                     <#if usernameEditDisabled??>
-                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
+                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="username" disabled />
                     <#else>
-                        <input tabindex="1" id="username" placeholder="${msg("email")}" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off" />
+                        <input tabindex="1" id="username" placeholder="${msg("email or username")}" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autocomplete="username" autofocus />
                     </#if>
                 </div>
 
                 <div class="${properties.kcFormGroupClass!}">
-                    <input tabindex="2" id="password" placeholder="${msg("password")}" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" />
+                    <input tabindex="2" id="password" placeholder="${msg("password")}" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="current-password"/>
                 </div>
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
