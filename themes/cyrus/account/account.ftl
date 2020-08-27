@@ -2,7 +2,7 @@
 <@layout.mainLayout active='account' bodyClass='user'; section>
 
     <div class="header-container">
-        <div class="row">
+    <div class="row">
         <div class="header-title">
             <h1>${msg("editAccountHtmlTitle")}</h1>
         </div>
@@ -38,25 +38,18 @@
     </div>
 
     <div class="form-group ${messagesPerField.printIfExists('firstName','has-error')}">
-
-        <div class="">
-            <input type="text" placeholder="${msg("first name ")}"  id="firstName" name="firstName" value="${(account.firstName!'')}"/>
-        </div>
+        <input type="text" placeholder="${msg("first name ")}"  id="firstName" name="firstName" value="${(account.firstName!'')}"/>
     </div>
 
     <div class="form-group ${messagesPerField.printIfExists('lastName','has-error')}">
-        <div class="">
-            <input type="text" placeholder="${msg("last name ")}"  id="lastName" name="lastName" value="${(account.lastName!'')}"/>
-        </div>
+        <input type="text" placeholder="${msg("last name ")}"  id="lastName" name="lastName" value="${(account.lastName!'')}"/>
     </div>
 
     <div class="form-group">
-        <div id="">
-            <div class="row-buttons">
-                <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
-                <button type="save" name="submitAction" value="Save">${msg("doSave")}</button>
-                <button type="cancel"  name="submitAction" value="Cancel">${msg("doCancel")}</button>
-            </div>
+        <div class="row-buttons">
+            <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
+            <button type="save" name="submitAction" value="Save">${msg("doSave")}</button>
+            <button type="cancel"  name="submitAction" value="Cancel">${msg("doCancel")}</button>
         </div>
     </div>
 

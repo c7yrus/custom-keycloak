@@ -32,7 +32,7 @@ input[type=text]:focus, input[type=password]:focus {
     outline-color: #3186d1
 }
 
-button[type=save] {
+button[type=save], button[type=submit] {
   padding: 10px;
   text-decoration: uppercase;
   border: none;
@@ -43,8 +43,8 @@ button[type=save] {
   text-decoration: none;
   min-width: 40%;
     border: 1px #3186d1 solid;
-    background-color:#fff;
-    color: #3186d1;
+    background-color:#3186d1;
+    color: #fff;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -61,14 +61,14 @@ button[type=cancel] {
   text-decoration: none;
   min-width: 40%;
     border: 1px #f74d37 solid;
-    background-color:#fff;
-    color: #f74d37;
+    background-color:#f74d37;
+    color: #fff;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-button[type=save]:hover {
+button[type=save]:hover, button[type=submit]:hover {
     background-color: #1167b1;
     color: #fff;
 }
