@@ -360,6 +360,13 @@ header .navbar {
     position: relative;
 }
 
+.form-group-totp {
+    position: relative;
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 .control-label + .required {
     position: absolute;
     right: -2px;

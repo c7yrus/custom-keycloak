@@ -102,34 +102,31 @@
             </li>
         </div>
     </ol>
-    </div>
-
-    <hr/>
 
     <form action="${url.totpUrl}" class="form-horizontal" method="post">
-    <div class="form-container-totp">
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
-        <div class="form-group">
+
+        <div class="form-group-totp">
             <label for="totp">${msg("authenticatorCode")}</label> <span class="required">*</span>
             <input type="text" id="totp" name="totp" autocomplete="off" autofocus>
             <input type="hidden" id="totpSecret" name="totpSecret" value="${totp.totpSecret}"/>
         </div>
 
-        <div class="form-group" ${messagesPerField.printIfExists('userLabel',properties.kcFormGroupErrorClass!)}">
+        <div class="form-group-totp" ${messagesPerField.printIfExists('userLabel',properties.kcFormGroupErrorClass!)}">
             <label for="userLabel">${msg("totpDeviceName")}</label> <#if totp.otpCredentials?size gte 1><span class="required">*</span></#if>
             <input type="text" id="userLabel" name="userLabel" autocomplete="off">
         </div>
 
-        <div class="form-group">
+        <div class="">
             <div class="row-buttons-authenticators">
                 <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
                     <button type="submit" id="saveTOTPBtn" name="submitAction" value="Save">${msg("doSave")}</button>
                     <button type="cancel" id="cancelTOTPBtn" name="submitAction" value="Cancel">${msg("doCancel")} </button>
             </div>
         </div>
+    </form>
 
     </div>
-    </form>
     </#if>
 
 </@layout.mainLayout>
