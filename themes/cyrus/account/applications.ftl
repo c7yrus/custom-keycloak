@@ -10,7 +10,8 @@
     <hr id="hr-line">
     </div>
 
-    <form action="${url.applicationsUrl}" method="post">
+    <div class="form-container-expanded">
+        <form action="${url.applicationsUrl}" method="post">
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
         <input type="hidden" id="referrer" name="referrer" value="${stateChecker}">
 
@@ -75,5 +76,6 @@
             </tbody>
         </table>
     </form>
+    </div>
 
 </@layout.mainLayout>

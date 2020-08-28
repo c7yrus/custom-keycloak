@@ -32,9 +32,7 @@
     </#if>
 
     <div class="form-group ${messagesPerField.printIfExists('email','has-error')}">
-        <div class="">
-            <input type="text" placeholder="${msg("email ")}"  id="email" name="email" autofocus value="${(account.email!'')}"/>
-        </div>
+        <input type="text" placeholder="${msg("email ")}"  id="email" name="email" autofocus value="${(account.email!'')}"/>
     </div>
 
     <div class="form-group ${messagesPerField.printIfExists('firstName','has-error')}">
